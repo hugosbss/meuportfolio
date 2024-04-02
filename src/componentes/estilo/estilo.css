@@ -1,0 +1,70 @@
+.app-header {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: flex;
+}
+
+.cabecalho {
+  align-items: center;
+  top: 0; 
+  padding: 10px;
+  border-bottom: 0px;
+  background-color: purple;
+  width: flex;
+}
+
+.perfil {
+  width: 200px; /* Ajuste o tamanho conforme necessário */
+  height: 200px; /* Ajuste o tamanho conforme necessário */
+  border-radius: 50%; /* Torna a imagem circular */
+  object-fit: cover; /* Garante que a imagem preencha o espaço definido */
+  bottom: 90; /* Alinha a parte inferior da imagem ao fundo do elemento pai */
+  right: 90; /* Alinha a parte direita da imagem à direita do elemento pai */
+}
+
+.texto {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%) translateY(-100%);
+  animation: entrar 3s forwards;
+  font-size: 20px; /* Defina o tamanho da fonte para 20 pixels */
+}
+.texto p {
+  margin: 10px;
+  font-family: Arial, sans-serif;
+  
+}
+
+@keyframes entrar {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -50%) translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.sobre {
+  padding: 15px;
+  display: flex;
+  flex-direction:row;
+  justify-content: center;
+  margin: 10vh;
+  border-radius: 15px;
+  box-shadow: 3px 3px 8px 3px rgba(165, 165, 165, 0.9);
+}
+
+.rodape {
+  justify-content: center;
+  display: flex;
+  bottom: 0;
+  left: 0;
+  padding: 25px; 
+  width: 100%;
+  position: fixed; 
+  background-color: #9c9c9c; 
+}
