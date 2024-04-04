@@ -1,19 +1,20 @@
-import Esquerdo from "../sobre/sobre";
+import Texto from "../texto/texto";
 
 function Cabecalho(){
+
     return(
         <div className="cabecalho">
 
             <img
                 src="/mft.jpeg"  
-          alt="perfil" 
-          className="perfil"
+                alt="perfil" 
+                className="perfil"
             /> 
 
             <div className="texto">
-            Hugo Silva <br/>
-            Desenvolvedor Fullstack |  react | node  
+                <Texto/>
             </div>
+
 
         </div>
     )
