@@ -5,6 +5,18 @@
   flex-direction: column;
 }
 
+.body{
+  background-color: transparent;
+}
+.corpo.escuro {
+  background-color: #2c2c2c;
+  color: #f0f0f0;
+}
+.corpo.claro {
+  background-color: #ffffff;
+  color: #000000;
+}
+
 .cabecalho {
   justify-content: left;
   align-items: center;
@@ -15,7 +27,7 @@
   position: fixed; 
   border-bottom: 0px;
   background-color: rgb(122, 122, 122)
-  ;}
+}
 
 .texto-container {
   border: 0px;
@@ -60,14 +72,7 @@
   margin-top: 140px; /* Ajuste conforme a altura do cabeçalho */
   margin-bottom: 100px; /* Ajuste conforme a altura do rodapé */
 }
-.claro {
-  background-color: white;
-  color: black;
-}
-.escuro {
-  background-color: black;
-  color: white;
-}
+
 
 .rodape {
   justify-content: center;
@@ -81,14 +86,14 @@
 }
 
 .botao{
-  position: fixed; /* Ou absolute, dependendo do comportamento desejado */
-  right: 20px; /* Ajuste conforme necessário */
-  background-color: transparent; /* Cor de fundo do botão */
-  color: black; /* Cor do texto do botão */
-  border: 0px; /* Remove a borda do botão */
+  position: fixed; 
+  right: 20px; 
+  background-color: transparent; 
+  color: black; 
+  border: 0px; 
   padding: 10px 10px; /* Espaçamento interno do botão */
-  border-radius: 50px; /* Arredonda as bordas do botão */
-  cursor: pointer; /* Altera o cursor ao passar o mouse sobre o botão */
+  border-radius: 30px; 
+  cursor: pointer;
 }
 .botao:hover {
   box-shadow: 3px 3px 8px 3px rgba(75, 75, 75, 0.9);

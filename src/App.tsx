@@ -15,15 +15,16 @@ function App() {
 
       <header className="App-header">
 
-      </header>
+        <Temas/>
       
-      <main className='corpo'>
-        
+      </header>
+
+      <body className='corpo'>
+
         <Sobre/>
+        <Rodape/>
 
-      </main>
-
-      <Rodape/>
+      </body>
     </div>
   );
 }

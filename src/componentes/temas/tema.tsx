@@ -1,19 +1,20 @@
-import { useState } from "react";
-import { WiSolarEclipse } from "react-icons/wi";
+import { useState } from 'react';
+import { PiSelectionInverseFill } from 'react-icons/pi';
+import '/portfoliohs/src/componentes/estilo/estilo.css';
 
+function Temas() {
+  const [tema, setTema] = useState<'claro' | 'escuro'>('claro');
+  const alternarTema = () => {
+      setTema('escuro');
+  };
 
-function Temas (){
-
-        const [tema, setTema] = useState('claro');
-        const alternarTema = () => {
-          setTema(tema === 'claro' ? 'escuro' : 'claro');
-    }
-
-    return(
-        <div className={`corpo ${tema}`}>
-          <button onClick={alternarTema} className="botao"><WiSolarEclipse size={40}  color="orange" /></button>
-        </div>
-      );
-    }
+  return (
+      <div className={`corpo ${tema}`}>
+          <button onClick={alternarTema} className="corpo">
+              <PiSelectionInverseFill size={25} />
+          </button>
+      </div>
+  );
+}
 
 export default Temas;
