@@ -1,6 +1,12 @@
 import { AiFillGithub, AiFillLinkedin, AiOutlineWhatsApp } from "react-icons/ai";
 
-function Rodape (){
+interface RodapeProps {
+  isVisible: boolean;
+}
+
+function Rodape({ isVisible }: RodapeProps) {
+  if (!isVisible) return null;
+
     return(
         <div className="rodape">
         <a href="https://github.com/hugosbss?tab=repositories">

@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import './App.css';
 import Cabecalho from './componentes/cabecalho/cabecalho';
 import './componentes/estilo/estilo.css';
@@ -7,24 +8,29 @@ import Temas from './componentes/temas/tema';
 
 function App() {
 
+  const [showFooter, setShowFooter] = useState(false);
+  useEffect(() => {
+    function handleScroll() {
+      const isBottom = window.innerHeight + window.scrollY >= document.body.offsetHeight;
+      setShowFooter(isBottom);
+    }
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
-    <div>
-
-      <Cabecalho/>
-
+    <div  className='corpo'>
       <header className="App-header">
-
-        <Temas/>
-      
+        <Cabecalho/>
       </header>
 
-      <body className='corpo'>
+      <div>
+        <Temas>
+          <Sobre/>
+        </Temas>
+      </div>
 
-        <Sobre/>
-        <Rodape/>
-
-      </body>
+      <Rodape isVisible={showFooter} />
     </div>
   );
 }
