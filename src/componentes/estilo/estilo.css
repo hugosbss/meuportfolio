@@ -14,7 +14,7 @@
   display: flex;
   min-height: calc(100vh - 100px); /* Subtrair a altura do cabeçalho */
   min-height: 100vh; /* Garantir que a div .corpo ocupe toda a altura da tela */
-  margin-top: 50px;
+  margin-top: 10px;
   margin-bottom: 50px;
 }
 
@@ -73,7 +73,7 @@
   display: flex;
   flex-direction:column;
   justify-content: center;
-  margin: 20vh 10vw;
+  margin: 25vh 10vw;
   border-radius: 15px;
   box-shadow: 3px 3px 8px 3px rgba(165, 165, 165, 0.9);
 }
