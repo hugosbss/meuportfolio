@@ -116,3 +116,8 @@
 ::-webkit-scrollbar-track {
   background-color: #f1f1f1;
 }
+
+.icones{
+  justify-content: center;
+  align-items: center;
+}

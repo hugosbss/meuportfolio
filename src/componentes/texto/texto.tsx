@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 
 const Texto = () => {
   const [text, setText] = useState('');
-  const originalText = `Hugo Silva\nDev Fullstack | react | node`;
+  const originalText = `Hugo Silva\nDesenvolvedor fullstack`;
 
   useEffect(() => {
     let currentIndex = 0;

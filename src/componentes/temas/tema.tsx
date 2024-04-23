@@ -1,6 +1,6 @@
 import React, { ReactNode, useState } from 'react';
 import { PiSelectionInverseFill } from 'react-icons/pi';
-import '/portfoliohs/src/componentes/estilo/estilo.css';
+import '/meuportfolio/src/componentes/estilo/estilo.css';
 
 interface TemasProps {
   children: ReactNode;
